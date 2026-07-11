@@ -1100,10 +1100,14 @@ display: none !important;
 /* ── responsive ── */
 @media (max-width: 768px) {
     .auth-container {
+        width: 90%;
         max-width: 460px;
         padding: 28px 24px 34px;
         border-radius: 20px;
         gap: 20px;
+    }
+    .name {
+        font-size: 60px;
     }
     .auth-tab {
         font-size: 15px;
@@ -1120,10 +1124,14 @@ display: none !important;
 }
 @media (max-width: 480px) {
     .auth-container {
+        width: 95%;
         max-width: 100%;
         padding: 24px 16px 30px;
         border-radius: 18px;
         gap: 18px;
+    }
+    .name {
+        font-size: 40px;
     }
     .auth-tab {
         font-size: 14px;
