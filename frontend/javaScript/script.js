@@ -12,6 +12,10 @@ window.addEventListener("load", ()=>{
     if (intro) {
         setTimeout(()=>{
             intro.style.top="-100%"
+            // Hide the loader completely after transition finishes (1000ms transition time)
+            setTimeout(() => {
+                intro.style.display = 'none';
+            }, 1000);
         },2000)
     }
 });
