@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        StockMitra | Store Stok Management
+    </title>
+    <link rel="stylesheet" href="/frontend/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/frontend/Assets/favicon.svg">
+    <meta name="description" content="A Store Stock Management Landing Page">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <script src="/frontend/Assets/lottie-player.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="intro-loader">
+            <h1 class="name">StockMitra</h1>
+        </div>
+        <div class="glass" data-aos="fade-down"></div>
+        <div class="navbar" data-aos="fade-down">
+            <div class="stockmitra_logo">
+                <a href="/frontend/html/index.html"><div class="logo"></div></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="/frontend/html/signup.html"><button class="sign-up">Sign-up</button></a>
+            </ul>
+        </div>
+        <div class="hero-section" id="home" data-aos="fade-right">
+            <h1 class="heading">StockMitra</h1>
+            <h4 class="supporting-heading">Know exactly what’s selling and what’s about to run out in one click a day.</h4>
+            <p class="supporting-text">Upload your products once. Update your daily sales with a simple click. Get clear charts, stock alerts, and sales trends  no spreadsheets, no confusion.</p>
+            <a href="#how"><div class="how">See How It Works</div></a>
+        </div>
+        <div class="h-i-works panel" id="how">
+            <div class="works-container">
+            <h2 class="section-title" data-aos="fade-up">How StockMitra Works</h2>
+            <div class="steps-grid" data-aos="flip-up">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Add Your Products</h3>
+                    <p>Upload your entire inventory in minutes. Just enter product names, quantities, and prices.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Update Daily Sales</h3>
+                    <p>Every day, click once to mark what sold. No more messy notebooks or forgotten entries.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Instant Insights</h3>
+                    <p>See what's selling fast, what's low in stock, and what needs reordering — all on one dashboard.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="features panel" id="features">
+            <div class="features-container">
+                <h2 class="section-title" style="color: var(--creamwhite);" data-aos="fade-down">Why Store Owners Love StockMitra</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="zoom-in">
+                        <div class="feature-icon">
+                            <img class="f-icons" src="/frontend/Assets/sales-track.png">
+                        </div>
+                        <h3>Daily Sales Tracker</h3>
+                        <p>Log daily sales with a single click. See trends, peak days, and slow movers instantly.</p>
+                    </div>
+                    <div class="feature-card" data-aos="zoom-in">
+                        <div class="feature-icon">
+                            <img class="f-icons" src="/frontend/Assets/bell.png">
+                        </div>
+                        <h3>Smart Stock Alerts</h3>
+                        <p>Get notified when stock runs low. Never miss a restock and never lose a sale.</p>
+                    </div>
+                    <div class="feature-card" data-aos="zoom-in">
+                        <div class="feature-icon">
+                            <img class="f-icons" src="/frontend/Assets/visual-analytics.png">
+                        </div>
+                        <h3>Visual Analytics</h3>
+                        <p>Clear charts and graphs show you exactly what's working — no data science degree needed.</p>
+                    </div>
+                    <div class="feature-card" data-aos="zoom-in">
+                        <div class="feature-icon">
+                            <img class="f-icons" src="/frontend/Assets/device.png">
+                        </div>
+                        <h3>Works on Any Device</h3>
+                        <p>Check your store stats from your phone, tablet, or desktop — always up to date.</p>
+                    </div>
+                    <div class="feature-card" data-aos="zoom-in">
+                        <div class="feature-icon">
+                            <img class="f-icons" src="/frontend/Assets/update.png">
+                        </div>
+                        <h3>One-Click Updates</h3>
+                        <p>No forms, no spreadsheets. Just click what sold and move on with your day.</p>
+                    </div>
+                    <div class="feature-card" data-aos="zoom-in">
+                        <div class="feature-icon">
+                            <img class="f-icons" src="/frontend/Assets/secure.png">
+                        </div>
+                        <h3>Secure & Private</h3>
+                        <p>Your store data is yours alone. Encrypted and safe with secure access.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact panel" id="contact">
+            <div class="contact-container">
+                <h2 class="section-title" style="color: var(--darkGreen);" data-aos="fade-up">Get in Touch</h2>
+                <p class="contact-subtitle" data-aos="fade-up">Have questions or need help? I am just a message away.</p>
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <a href="mailto:aakash.shrivastava237580@gmail.com?subject=hello%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you." style="text-decoration: none; width: fit-content;">
+                            <div class="contact-item">
+                            <span class="contact-icon">
+                                <lottie-player 
+                                src="/frontend/Assets/email.json"
+                                background="transparent"
+                                speed="1"
+                                autoplay="false"
+                                style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(21deg) brightness(101%) contrast(103%);"
+                                loop="false"
+                                class="lottie-icon">
+                            </lottie-player>
+                            </span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>aakash.shrivastava237580@gmail.com</p>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="tel:+91 7042934463" style="text-decoration: none; width: fit-content;">
+                            <div class="contact-item">
+                                <span class="contact-icon">
+                                    <lottie-player 
+                                    src="/frontend/Assets/contact.json"
+                                    background="transparent"
+                                    speed="1"
+                                    autoplay="false"
+                                    loop="false"
+                                    class="lottie-icon">
+                                </lottie-player>
+                                </span>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91 7042934463</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <lottie-player 
+                                src="/frontend/Assets/location.json"
+                                background="transparent"
+                                speed="1"
+                                autoplay="false"
+                                loop="false"
+                                class="lottie-icon">
+                            </lottie-player>
+                            </span>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Delhi, New Delhi, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-aos="fade-left">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="4" placeholder="Your Message" wrap="soft" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer-line">
+                Roz ka hisaab ek jagah, bina tension.
+            </p>
+            <div class="footer-panel">
+                <div class="footer-item">
+                    <a href="#">FAQ</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Account</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#">Media Center</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">About Me</a>
+                </div>
+                <div class="footer-item">
+                    <a href="#">Contact</a>
+                    <a href="#">Terms Of Uses</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+            <div class="last-footer">
+                <p class="last-line">Stop running out of bestsellers. Start knowing your numbers.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="/frontend/javaScript/script.js" type="module"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

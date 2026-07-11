@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockMitra Sign Up Page</title>
+    <meta name="description" content="A Store Stock Management Sign Up Page">
+    <link rel="icon" type="image/svg+xml" href="/frontend/Assets/favicon.svg">
+    <link rel="stylesheet" href="/frontend/css/style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="auth-container">
+            <div class="auth-tabs" role="tablist">
+                <button class="auth-tab active" data-form="signup" role="tab" aria-selected="true">
+                    Sign Up
+                </button>
+                <button class="auth-tab" data-form="login" role="tab" aria-selected="false">
+                    Log In
+                </button>
+            </div>
+            <form id="signupForm" class="auth-form active" autocomplete="off">
+                <div class="s-form">
+                    <div>
+                        <label for="storeName">Store Name</label>
+                        <input type="text" id="storeName" placeholder="Your store name" required autofocus />
+                    </div>
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="First name" required />
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Last name" required />
+                    </div>
+                    <div>
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" placeholder="you@example.com" required />
+                    </div>
+                    <div>
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" placeholder="Min 6 characters" required />
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Re-enter password" required />
+                    </div>
+                    <p id="authError"></p>
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+            <form id="loginForm" class="auth-form" autocomplete="off">
+                <div class="s-form">
+                    <div>
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="you@example.com" required />
+                    </div>
+                    <div>
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required />
+                    </div>
+                    <p id="authErrorLogin"></p>
+                    <button type="submit">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/frontend/javaScript/auth.js" type="module"></script>
+</body>
+</html>

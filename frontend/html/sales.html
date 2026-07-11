@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/frontend/Assets/favicon.svg">
+    <title>StockMitra | Update Sales</title>
+    <meta name="description" content="A Store Stock Management Sales Page">
+    <link rel="stylesheet" href="/frontend/css/sales.css">
+</head>
+<body>
+    <div class="sales-container">
+        <div class="header">
+            <div>
+                <h1>Update Sold Items</h1>
+                <p class="sub">Select the items you sold today and enter the quantity.</p>
+            </div>
+            <a href="dashboard.html" class="back-btn">⬅ Back to Dashboard</a>
+        </div>
+         <div class="search-section">
+            <div class="search-wrapper">
+                <div class="search-input-wrap">
+                    <span class="search-icon"></span>
+                    <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search items by name…"
+                    autocomplete="off"
+                    />
+                    <button type="button" id="clearSearchBtn" class="clear-btn" aria-label="Clear search">✕</button>
+                </div>
+                <div id="searchDropdown" class="search-dropdown"></div>
+            </div>
+            <div class="search-status" id="searchStatus">
+                Showing <strong id="visibleCount">0</strong> of <strong id="totalCount">0</strong> items
+                <button type="button" id="clearSearchAllBtn" class="search-clear-all hidden">✕ Clear filter</button>
+            </div>
+        </div>
+        <div id="itemsList" class="items-grid"></div>
+        <div class="submit-area">
+            <button id="submitSalesBtn" class="submit-sales-btn">Update Sales</button>
+        </div>
+    </div>
+    <div id="toast-container"></div>
+    <div id="confirm-modal">
+        <div class="confirm-box">
+            <h3 id="confirm-title">Are you sure?</h3>
+            <p id="confirm-message">Message here</p>
+            <div class="confirm-actions">
+                <button class="btn-cancel" id="confirm-cancel">Cancel</button>
+                <button class="btn-confirm" id="confirm-ok">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="/frontend/javaScript/protect.js" type="module"></script>
+    <script src="/frontend/javaScript/sales.js" type="module"></script>
+    <script src="/frontend/javaScript/notifications.js" type="module"></script>
+</body>
+</html>

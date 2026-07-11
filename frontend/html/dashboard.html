@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/frontend/Assets/favicon.svg">
+    <title>StockMitra | Store Stock Analysis</title>
+    <meta name="description" content="A Store Stock Management Dashboard Page">
+    <link rel="stylesheet" href="/frontend/css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sub-header">
+            <div>
+                <h1>Stock Dashboard</h1>
+                <p>Welcome! <span id="username">User</span></p>
+            </div>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+
+        <form class="add-item-form" id="itemForm">
+            <div class="form-group">
+                <label for="itemName">Item Name *</label>
+                <input type="text" id="itemName" placeholder="e.g. Sugar" required autofocus>
+            </div>
+            <div class="form-group">
+                <label for="itemCategory">Category</label>
+                <select id="itemCategory">
+                    <option value="Grocery">Grocery</option>
+                    <option value="Beverages">Beverages</option>
+                    <option value="Snacks">Snacks</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="measureUnit">Unit</label>
+                <select id="measureUnit">
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="g">Gram (g)</option>
+                    <option value="L">Liter (L)</option>
+                    <option value="mL">Milliliter (mL)</option>
+                    <option value="Pcs">Pieces (Pcs)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="netWeight">Weight</label>
+                <input type="number" id="netWeight" placeholder="e.g. 500" min="1" step="1" inputmode="numeric">
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity *</label>
+                <input type="number" id="quantity" placeholder="e.g. 10" required min="0" step="1" inputmode="numeric">
+            </div>
+            <div class="form-group">
+                <label for="price">Price (per unit) ₹</label>
+                <input type="number" id="price" placeholder="e.g. 45" min="1" step="1" inputmode="numeric">
+            </div>
+            <div class="form-group">
+                <label for="minStock">Min Stock Alert</label>
+                <input type="number" id="minStock" placeholder="e.g. 5" value="5" min="1" step="1" inputmode="numeric">
+            </div>
+            <button type="submit" class="add-btn">+ Add Item</button>
+        </form>
+        <!-- Stock Table  ➕ -->
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Unit</th>
+                        <th>Weight</th>
+                        <th>Qty</th>
+                        <th>Price (₹)</th>
+                        <th>Total Value (₹)</th>
+                        <th>Min Stock</th>
+                        <th style="text-align:center;">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="stockTableBody">
+                </tbody>
+            </table>
+        </div>
+        <p style="margin-top: 12px; color: #888; font-size: 14px;" id="totalItemsMsg">Total items: 0</p>
+        <div class="action-row">
+            <a href="sales.html" class="update-sales-btn">Sold Items</a>
+        </div>
+        <div class="history-section">
+            <h2>Sales History</h2>
+            <div class="history-table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date & Time</th>
+                            <th>Item</th>
+                            <th>Unit</th>
+                            <th>Qty Sold</th>
+                            <th>Total Value (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="toast-container"></div>
+    <!-- Confirm Modal -->
+    <div id="confirm-modal">
+        <div class="confirm-box">
+            <h3 id="confirm-title">Are you sure?</h3>
+            <p id="confirm-message">Message here</p>
+            <div class="confirm-actions">
+                <button class="btn-cancel" id="confirm-cancel">Cancel</button>
+                <button class="btn-confirm" id="confirm-ok">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="/frontend/javaScript/protect.js" type="module"></script>
+    <script src="/frontend/javaScript/dashboard.js" type="module"></script>
+    <script src="/frontend/javaScript/notifications.js" type="module"></script>
+</body>
+</html>
